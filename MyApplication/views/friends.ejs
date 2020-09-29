@@ -1,0 +1,27 @@
+  <%- include ("partials/header")%>
+  <h>Friend list goes here!!</h>
+  <%friends.forEach(function(friend){%>
+     <li>
+         <%=friend.toUpperCase()%>
+     </li>
+      <%});%>
+
+  
+  <form action ="/addfriend" method ="POST">
+      <input type ="text" name = "newfriend" placeholder ="name">
+      <button>Add Your Friend here</button>
+      
+  </form>
+  <%- include ("partials/footer")%>
+  
+  
+  
+  
+   
+    
+  
+  
+  
+  
+  
+  
